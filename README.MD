@@ -15,7 +15,27 @@ In the first dataset one protein was always treated as a whole molecule. But bec
 
 ## Project structure
 
-The experiments, data exploration and model development are described in the notebooks 0-7. The final results are described in the 8 notebook. 
+The experiments, data exploration and model development are described in the notebooks 0-7. The final results are described in the 8 notebook.
+
+Baseline models are presented in notebooks 0-2, in which the dataset is described and analysed, feature engineering is performed, and simple predictions are made using Random Forest to establish benchmarks for the project.
+
+![base](./static/base_dataset.png)
+
+In the next step (3), motifs are identified using pairwise alignment from Biopython and specific threshold. The aim was to check whether information about specific beginning and end sequences can enrich the data and improve predictions.
+
+![motifs](./static/motif_discovery.png)
+
+After these tests, PyTorch neural networks were developed and evaluated, starting with the LSTM model, where a bidirectional network was tested using encoded sequences.  
+In the 5th notebook, protein features were scaled and used with an NN classifier.
+
+![LSTM](./static/LSTM_1.png)
+![NN](./static/NNClassifier.png)
+
+The 6th notebook presents a combined approach. In this method, predictions were first made using the LSTM and then merged with additional features for the classifier.
+![CombinedNN](./static/NN_combined_classification.png)
+
+The final attempt described in notebook 7 leveraged the power of Random Forest with an enriched dataset. By combining chemical features with sequence information and amino acid content, achieved the best results out of all tests.
+![CombinedDataset](./static/combined_dataset.png)
 
 
 ## Info
