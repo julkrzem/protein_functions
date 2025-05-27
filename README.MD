@@ -15,7 +15,7 @@ In the first dataset one protein was always treated as a whole molecule. But bec
 
 ## Project structure
 
-The experiments, data exploration and model development are described in the notebooks 0-7. The final results are described in the 8 notebook.
+The experiments, data exploration and model development are described in the notebooks 0-8. The final results are described in the 9th notebook.
 
 Baseline models are presented in notebooks 0-2, in which the dataset is described and analysed, feature engineering is performed, and simple predictions are made using Random Forest to establish benchmarks for the project.
 
